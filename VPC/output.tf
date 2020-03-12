@@ -25,7 +25,7 @@ output "Private Subnet2" {
 }
 
 
-output "Private Subnet3" {
+output "Private_Subnet3" {
   value       = "${module.dev.Private_Subnet3}"
 
 
