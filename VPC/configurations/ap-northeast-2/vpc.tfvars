@@ -1,8 +1,8 @@
 
 # Provide a region for VPC
 
-environment                     =   	"ohio"
-region                          =       "us-east-2"
+environment                     =   	"seoul"
+region                          =       "ap-northeast-2"
 
 
 
