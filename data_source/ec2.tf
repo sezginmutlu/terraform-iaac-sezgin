@@ -70,7 +70,7 @@ resource "aws_instance" "web" {
 
 
      inline = [ 
-         "sudo up-get install telnet -y",
+         "sudo apt-get install telnet -y",
          "sudo mkdir /tmp/ubuntu",
          "w",
          "free -m",
