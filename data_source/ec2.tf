@@ -61,6 +61,19 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   key_name      = "${aws_key_pair.provisioner.key_name}"
 
+
+  provisioner "file" {
+    connection {
+    type     = "ssh"
+    user     = "ubuntu"
+    private_key = "${file("~/.ssh/id_rsa")}"
+    host     = "${self.public_ip}"
+   }
+    source      = "test"
+    destination = "/tmp/"
+  
+ }
+
   tags = {
     Name = "HelloWorld"
   }
