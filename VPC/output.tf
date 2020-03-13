@@ -20,7 +20,7 @@ output "Private_Subnet1" {
 }
 
 
-output "Private Subnet2" {
+output "Private_Subnet2" {
   value       = "${module.dev.Private_Subnet2}"
 }
 
@@ -29,11 +29,11 @@ output "Private_Subnet3" {
   value       = "${module.dev.Private_Subnet3}"
 
 
-
-  output "IGW" {
+}
+output "IGW" {
     value       = "${module.dev.IGW}"
    
-  }
+  
 }
 
 
