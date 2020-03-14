@@ -41,7 +41,7 @@ resource "aws_instance" "r1soft"         {
       host        = "${self.public_ip}"
       type        = "ssh"
       user        = "${var.user}"
-      private_key = "${file(var.ssh_key_location)}"
+      private_key = "${file("~/.ssh/id_rsa")}"
     }
 
     source      = "./module/r1soft.repo"
