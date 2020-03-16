@@ -30,3 +30,10 @@ cidr_block3_private = "10.0.103.0/24"
 s3_folder_project               =   	"tower"
 s3_folder_type                  =   	"tools"
 s3_tfstate_file                 =   	"tower.tfstate" 
+
+
+# choose AZs to create subnets
+
+az1                  =       "ca-central-1a" 
+az1                  =       "ca-central-1b" 
+az3                  =       "ca-central-1c" 

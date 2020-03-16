@@ -7,7 +7,7 @@ region                          =       "us-west-2 "
 
 
 s3_bucket                       =	"terraform-class-sezgin"
-s3_folder_region                =	"us-east-1"
+s3_folder_region                =	"us-west-1"
 
 
 
@@ -30,3 +30,10 @@ cidr_block3_private = "10.0.103.0/24"
 s3_folder_project               =   	"tower"
 s3_folder_type                  =   	"tools"
 s3_tfstate_file                 =   	"tower.tfstate"
+
+
+# choose AZs to create subnets
+
+az1                  =       "us-west-2a" 
+az2                  =       "us-west-2b" 
+az3                  =       "us-west-2c" 
